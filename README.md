@@ -7,43 +7,28 @@
 ```
 .
 ├── README.md
-├── longestSubstring.js    # 最长无重复字符子串算法
-├── twoNum.js             # 两数之和算法
-└── ...                    # 更多算法实现文件
+└── algorithms/
+    ├── longest-substring/     # 最长无重复字符子串
+    │   ├── README.md
+    │   └── solution.js
+    ├── two-sum/              # 两数之和
+    │   ├── README.md
+    │   └── solution.js
+    └── ...                   # 更多算法实现
 ```
 
 ## 已实现的算法
 
-### 1. 最长无重复字符子串 (Longest Substring Without Repeating Characters)
-
-- **文件**: `longestSubstring.js`
-- **难度**: 中等
-- **描述**: 给定一个字符串，找出其中不含有重复字符的最长子串的长度。
-- **示例**:
-  ```javascript
-  Input: "abcd"
-  Output: 4
-  ```
-- **实现思路**: 使用滑动窗口和哈希表来跟踪字符位置，时间复杂度 O(n)，空间复杂度 O(min(m, n))。
-
-### 2. 两数之和 (Two Sum)
-
-- **文件**: `twoNum.js`
-- **难度**: 简单
-- **描述**: 给定一个整数数组 nums 和一个整数目标值 target，请你在该数组中找出和为目标值的那两个整数，并返回它们的数组下标。
-- **示例**:
-  ```javascript
-  Input: nums = [1,2,3,4,5,6,7], target = 8
-  Output: [2,5]  // 因为 nums[2] + nums[5] = 3 + 5 = 8
-  ```
-- **实现思路**: 使用哈希表（Map）存储遍历过的数字及其索引，时间复杂度 O(n)，空间复杂度 O(n)。
+1. [最长无重复字符子串](./algorithms/longest-substring/README.md)
+2. [两数之和](./algorithms/two-sum/README.md)
 
 ## 如何运行
 
-1. 确保已安装 Node.js 环境
-2. 直接运行对应的 JavaScript 文件：
-   ```bash
-   node longestSubstring.js
-   # 或
-   node twoNum.js
-   ```
+每个算法目录下都有独立的 README.md 文件，包含：
+- 问题描述
+- 示例
+- 实现思路
+- 复杂度分析
+- 运行方法
+
+请进入具体算法目录查看详细说明。
